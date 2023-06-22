@@ -1,12 +1,25 @@
 {
-    "name": "Action script injection demo",
-    "version": "1.0",
+    "name": "Bulbuli",
+    "description": "Download mp3 songs from youtube, without using third party apps",
+    "version": "1.0.3",
     "manifest_version": 3,
+    "icons": {
+        "16": "/images/icon.png",
+        "32": "/images/icon.png",
+        "48": "/images/icon.png",
+        "128": "/images/icon.png"
+    },
     "action": {
-        "default_title": "Click to show an alert"
+        "default_title": "Click to Download Youtube video in mp3",
+        "default_icon": {
+            "16": "/images/icon.png",
+            "32": "/images/icon-32.png",
+            "48": "/images/icon-128.png",
+            "128": "/images/icon-128.png"
+        }
     },
     "permissions": ["activeTab", "scripting"],
     "background": {
         "service_worker": "scripts/background.js"
     }
-    }
+}
